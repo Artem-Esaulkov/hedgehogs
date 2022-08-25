@@ -1,0 +1,42 @@
+/* sale */
+
+.sale__container {
+    width: 353px;
+    margin: 0 auto;
+  }
+  
+  .sale__remainder {
+    background-image: url(./images/sale.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 41px 41px;
+    width: 100%;
+  }
+  
+  .sale__remainder-text {
+    font-family: "Cormorant Infant", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #195557;
+    margin: 0;
+    margin-left: 51px;
+    width: max-content;
+  }
+  
+  .sale__remainder-text_span {
+    margin: 0;
+    text-decoration: underline;
+  }
+  
+  .sale__text {
+    font-family: "Raleway";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: #195557;
+    margin: 25px auto 60px;
+    max-width: 200px;
+  }
