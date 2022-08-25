@@ -1,0 +1,89 @@
+/* about */
+
+.about__container {
+    max-width: 1920px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 3;
+  }
+  
+  .about__left-img {
+    position: absolute;
+    top: -80px;
+    left: 0;
+  }
+  
+  .about__cards {
+    margin: 127px auto 19px;
+    display: flex;
+    width: 874px;
+    gap: 155px;
+    list-style: none;
+  }
+  
+  .about__card {
+    position: relative;
+    margin-top: 30px;
+    max-width: 195px;
+    transition: transform 0.5s ease;
+    z-index: 4;
+  }
+  
+  .about__card:hover {
+    transform: scale(1.1);
+  }
+  
+  .about__card_middle {
+    margin: 0;
+  }
+  
+  .about__image {
+    width: 152px;
+    height: 152px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 4px 20px #c2ccca, -8px -8px 20px #ffffff;
+  }
+  
+  .about__image_1 {
+    background-color: #ffedcd;
+  }
+  
+  .about__image_2 {
+    background-color: #e2f0df;
+  }
+  
+  .about__image_3 {
+    background-color: #70908b;
+  }
+  
+  .about__title {
+    margin: 30px 0 8px;
+    font-family: "Cormorant Infant", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #195557;
+  }
+  
+  .about__text {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #195557;
+  }
+  
+  .about__right-img {
+    position: absolute;
+    top: 110px;
+    right: 0;
+    z-index: 5;
+  }

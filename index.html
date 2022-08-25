@@ -4,77 +4,180 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./style.css">
     <title>Hedgehog</title>
 </head>
 <body>
-    <div class="prime-container">
+    <main class="content">
         <div class="left-gradient"></div>
-        <header class="header">
-            <div class="header__container">
-                <img src="./images/Logo.svg" alt="Логотип" class="header__logo">
-                <nav class="header__menu">
-                    <ul class="header__list">
-                        <li><a class="header__item header__item_multiple">Каталог</a></li>
-                        <li><a href="#about" class="header__item">О нас</a></li>
-                        <li><a href="#" class="header__item">Контакты</a></li>
-                        <li><a href="#" class="header__item">Галерея</a></li>
-                    </ul>
-                    <p class="header__phone-text header__phone-text_mobile">+7 (965) 569-89-98</p>
-                    <div class="header__contacts">
-                        <a href="tel:+79655698998" class="header__phone">
-                            <div class="header__phone-button">
-                                <div class="header__phone-icon"></div>
+        <div class="prime-container">
+            <header class="header">
+                <div class="header__container">
+                    <img src="./images/Logo.svg" alt="Логотип" class="header__logo">
+                    <nav class="header__menu">
+                        <ul class="header__list">
+                            <li><a class="header__item header__item_multiple">Каталог</a></li>
+                            <li><a href="#about" class="header__item">О нас</a></li>
+                            <li><a href="#" class="header__item">Контакты</a></li>
+                            <li><a href="#" class="header__item">Галерея</a></li>
+                        </ul>
+                        <p class="header__phone-text header__phone-text_mobile">+7 (965) 569-89-98</p>
+                        <div class="header__contacts">
+                            <a href="tel:+79655698998" class="header__phone">
+                                <div class="header__phone-button">
+                                    <div class="header__phone-icon"></div>
+                                </div>
+                                <p class="header__phone-text header__phone-text_desktop">+7 (965) 569-89-98</p>
+                            </a>
+                            <a href="#" class="header__basket">
+                                <div class="header__number">1</div>
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+            <section class="hedgehogs">
+                <div class="hedgehogs__container">
+                    <h1 class="hedgehogs__title">
+                        <img src="./images/title.svg" alt="Ёжики">
+                    </h1>
+                    <p class="hedgehogs__subtitle">Тоже любят молоко</p>
+                    <p class="hedgehogs__paragraph">Заведите себе ёжика. Он всегда выслушает, не будет мяукать в 5 утра и царапать вашу мебель.</p>
+                    <button class="hedgehogs__button">Купить ёжика</button>
+                </div>
+            </section>
+            <section class="about" id="about">
+                <div class="about__container">
+                    <img src="./images/big_hedgehog.png" alt="Большой ёж" class="about__left-img">
+                    <ul class="about__cards">
+                        <li class="about__card">
+                            <div class="about__image about__image_1">
+                                <img src="./images/openmoji_hedgehog.svg" alt="Разведение">
                             </div>
-                            <p class="header__phone-text header__phone-text_desktop">+7 (965) 569-89-98</p>
-                        </a>
-                        <a href="#" class="header__basket">
-                            <div class="header__number">1</div>
-                        </a>
+                            <h2 class="about__title">разведение ежиков</h2>
+                            <p class="about__text">Собственная ферма, уход и содержание</p>
+                        </li>
+                        <li class="about__card about__card_middle">
+                            <div class="about__image about__image_2">
+                                <img src="./images/la_syringe-solid.svg" alt="Здоровье">
+                            </div>
+                            <h2 class="about__title">здоровье</h2>
+                            <p class="about__text">Всегда прививаем и вовремя обследуем ваших будущих питомцев</p>
+                        </li>
+                        <li class="about__card">
+                            <div class="about__image about__image_3">
+                                <img src="./images/ant-design_heart-twotone.svg" alt="Любовь и забота">
+                            </div>
+                            <h2 class="about__title">Любовь и забота</h2>
+                            <p class="about__text">Каждому ежику мы дарим много внимания</p>
+                        </li>
+                    </ul>
+                    <img src="./images/small_hedgehog.svg" alt="Маленький ёжик" class="about__right-img">
+                </div>
+            </section>
+        </div>
+        <div class="middle-container">
+            <div class="slider__sale slider__sale_1">-50 %</div>
+            <div class="slider__sale slider__sale_2">-50 %</div>
+            <div class="slider__info" id="info_1"></div>
+            <div class="slider__info-card slider__info-card_1">
+                <div class="slider__info-container">
+                    <div class="slider__info-solid">
+                        <p class="slider__info-text">привит</p>
                     </div>
-                </nav>
+                    <div class="slider__info-likes">
+                        <p class="slider__info-text" id="evgeny__likes">1235</p>
+                    </div>
+                </div>
             </div>
-        </header>
-        <section class="hedgehogs">
-            <div class="hedgehogs__container">
-                <h1 class="hedgehogs__title">
-                    <img src="./images/title.svg" alt="Ёжики">
-                </h1>
-                <p class="hedgehogs__subtitle">Тоже любят молоко</p>
-                <p class="hedgehogs__paragraph">Заведите себе ёжика. Он всегда выслушает, не будет мяукать в 5 утра и царапать вашу мебель.</p>
-                <button class="hedgehogs__button">Купить ёжика</button>
+            <div class="slider__info" id="info_2"></div>
+            <div class="slider__info-card slider__info-card_2">
+                <div class="slider__info-container">
+                    <div class="slider__info-solid">
+                        <p class="slider__info-text">привит</p>
+                    </div>
+                    <div class="slider__info-likes">
+                        <p class="slider__info-text" id="maxim__likes">1235</p>
+                    </div>
+                </div>
             </div>
-        </section>
-        <section class="about" id="about">
-            <div class="about__container">
-                <img src="./images/big_hedgehog.png" alt="Большой ёж" class="about__left-img">
-                <ul class="about__cards">
-                    <li class="about__card">
-                        <div class="about__image about__image_1">
-                            <img src="./images/openmoji_hedgehog.svg" alt="Разведение">
+            <section class="shop">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slider__container slider__container_1">
+                            <div class="slider__rectangle"></div>
+                            <h3 class="slider__title">Ежик “Евгений”</h3>
+                            <p class="slider__text">Очень любит сладости. Маленький сладкоежка=) Мы называем его так между собой. Ручной, любит внимание</p>
+                            <p class="slider__real-price">3 000 ₽</p>
+                            <p class="slider__new-price">1 500 ₽</p>
+                            <img src="./images/card_hedge_1.svg" alt="Евгений" class="slider__image_1">
+                            <div class="slider__plus"></div>
                         </div>
-                        <h2 class="about__title">разведение ежиков</h2>
-                        <p class="about__text">Собственная ферма, уход и содержание</p>
-                    </li>
-                    <li class="about__card about__card_middle">
-                        <div class="about__image about__image_2">
-                            <img src="./images/la_syringe-solid.svg" alt="Здоровье">
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider__container slider__container_2">
+                            <div class="slider__rectangle"></div>
+                            <h3 class="slider__title">Ежик “Максим”</h3>
+                            <p class="slider__text">Немного игривый и задорный характер этого друга никого не оставит равнодушным!</p>
+                            <p class="slider__real-price">5 000 ₽</p>
+                            <p class="slider__new-price">2 500 ₽</p>
+                            <img src="./images/card_hedge_2.png" alt="Максим" class="slider__image_2">
+                            <div class="slider__plus"></div>
                         </div>
-                        <h2 class="about__title">здоровье</h2>
-                        <p class="about__text">Всегда прививаем и вовремя обследуем ваших будущих питомцев</p>
-                    </li>
-                    <li class="about__card">
-                        <div class="about__image about__image_3">
-                            <img src="./images/ant-design_heart-twotone.svg" alt="Любовь и забота">
+                    </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </section>
+            <form class="form">
+                <div class="form__container">
+                    <h3 class="form__title">Заполните заявку и мы забронируем для Вас нового друга</h3>
+                    <div class="form__select">
+                        <ul class="form__for">
+                            <li class="form__for-item form__for-item_active">хочу ёжика для себя</li>
+                            <li class="form__for-item">хочу ёжика для детей</li>
+                            <li class="form__for-item">хочу ёжика для разведения</li>
+                        </ul>
+                        <div class="form__radio-list">
+                            <div class="form-radio">
+                                <input name="radio" class="form__radio-item" type="radio" id="check1" value="Мне нужен 1-2 ёжика" checked><label for="check1">Мне нужен 1-2 ёжика </label>
+                            </div>
+                            <div class="form-radio">
+                                <input name="radio" class="form__radio-item" type="radio" id="check2" value="Мне нужны 3 и более ёжиков"><label for="check2">Мне нужны 3 и более ёжиков</label>
+                            </div>
+                            <div class="form-radio">
+                                <input name="radio" class="form__radio-item" type="radio" id="check3" value="Мне нужны 3-4 ёжика"><label for="check3">Мне нужны 3-4 ёжика</label>
+                            </div>
+                            <div class="form-radio">
+                                <input name="radio" class="form__radio-item" type="radio" id="check4" value="Пока присматриваюсь"><label for="check4">Пока присматриваюсь</label>
+                            </div>
                         </div>
-                        <h2 class="about__title">Любовь и забота</h2>
-                        <p class="about__text">Каждому ежику мы дарим много внимания</p>
-                    </li>
-                </ul>
-                <img src="./images/small_hedgehog.svg" alt="Маленький ёжик" class="about__right-img">
+                    </div>
+                    <div class="form__input-list">
+                        <input type="text" class="form__input" placeholder="Ваше имя">
+                        <input type="text" class="form__input" placeholder="Ваш телефон">
+                        <input type="text" class="form__input" placeholder="Ваш e-mail">
+                    </div>
+                    <textarea class="form__textarea" placeholder="Комментарий к заявке"></textarea>
+                    <button class="form__submit" type="submit">Купить ёжика</button>
+                </div>
+            </form>
+            <div class="sale">
+                <div class="sale__container">
+                    <div class="sale__remainder">
+                        <p class="sale__remainder-text">У нас осталось еще: <span class="sale__remainder-text sale__remainder-text_span">25 ёжиков</span></p>
+                    </div>
+                    <p class="sale__text">Торопитесь! Акция действует до 26. 02. 2023</p>
+                </div>
             </div>
-        </section>
+        </div>
         <div class="right-gradient"></div>
-    </div>
+    </main>
+    <script src="./anchors.js"></script>
+    <script src="./swiper-bundle.min.js"></script>
+    <script src="./index.js"></script>
 </body>
 </html>

@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .content {
+    position: relative;
+    background: url(../images/Subtract.jpg) no-repeat;
+    background-size: 100% 992px;
+    overflow: hidden;
+  }
+  
+  .prime-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* gradients */
+  
+  .left-gradient {
+    background: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(180, 197, 194, 0.83) 0%,
+      rgba(224, 225, 225, 0) 100%
+    );
+    width: 1048px;
+    height: 1048px;
+    position: absolute;
+    top: -474px;
+    left: -524px;
+    z-index: 1;
+  }
+  
+  .right-gradient {
+    background: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(255, 238, 206, 0.49) 0%,
+      rgba(196, 196, 196, 0) 100%
+    );
+    width: 1582px;
+    height: 1582px;
+    position: absolute;
+    top: -73px;
+    right: -700px;
+    z-index: 1;
+  }

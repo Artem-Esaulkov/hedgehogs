@@ -1,360 +1,52 @@
 @import url(./normalize.css);
 @import url(./fonts/fonts.css);
+@import url(./css/prime-container.css);
+@import url(./css/header.css);
+@import url(./css/hedgehogs.css);
+@import url(./css/about.css);
+@import url(./css/middle-container.css);
+@import url(./css/slider.css);
+@import url(./css/form.css);
 
-* {
-  margin: 0;
-  padding: 0;
-}
+/* sale */
 
-.prime-container {
-  background: url(./images/Subtract.jpg) no-repeat;
-  background-size: 100% 830px;
-  position: relative;
-  overflow: hidden;
-}
-
-/* gradients */
-
-.left-gradient {
-  background: radial-gradient(
-    50% 50% at 50% 50%,
-    rgba(180, 197, 194, 0.83) 0%,
-    rgba(224, 225, 225, 0) 100%
-  );
-  width: 1048px;
-  height: 1048px;
-  position: absolute;
-  top: -474px;
-  left: -524px;
-}
-
-.right-gradient {
-  background: radial-gradient(
-    50% 50% at 50% 50%,
-    rgba(255, 238, 206, 0.49) 0%,
-    rgba(196, 196, 196, 0) 100%
-  );
-  width: 1582px;
-  height: 1582px;
-  position: absolute;
-  top: -73px;
-  right: -700px;
-}
-
-/* header */
-
-.header {
-  padding: 35px 60px;
-  position: relative;
-  z-index: 1;
-}
-
-.header__container {
-  max-width: 1920px;
+.sale__container {
+  width: 353px;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
 }
 
-.header__logo {
-  height: 56px;
-}
-
-.header__menu {
-  display: flex;
-}
-
-.header__list {
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-  width: 565px;
-  margin: auto 0;
-  margin-right: 132px;
-}
-
-.header__item {
-  font-family: "Cormorant Infant", sans-serif;
-  color: #195557;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 19px;
-  text-transform: uppercase;
-  text-decoration: none;
-  transition: opacity 0.5s ease;
-}
-
-.header__item:hover {
-  opacity: 0.7;
-}
-
-.header__item_multiple {
-  display: block;
-  background-image: url(./images/Vector.svg);
+.sale__remainder {
+  background-image: url(./images/sale.png);
   background-repeat: no-repeat;
-  background-size: 7px 10px;
-  background-position: 0 center;
-  width: 90px;
-  text-align: right;
-  cursor: pointer;
-}
-
-.header__contacts {
-  display: flex;
-}
-
-.header__phone {
-  display: flex;
-  text-decoration: none;
-  margin-right: 80px;
-}
-
-.header__phone-button {
-  transition: transform 0.5s ease;
-}
-
-.header__phone:hover .header__phone-button {
-  transform: scale(1.1);
-}
-
-.header__phone:hover .header__phone-text {
-  opacity: 0.7;
-}
-
-.header__phone-text {
-  font-family: "Raleway", serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 22px;
-  line-height: 26px;
-  text-transform: uppercase;
-  color: #195557;
-  transition: opacity 0.5s ease;
-}
-
-.header__phone-text_mobile {
-  display: none;
-}
-
-.header__phone-text_desktop {
-  margin: auto 0;
-}
-
-.header__phone-button {
-  background: linear-gradient(1.36deg, #b0d3ce 12.29%, #ffedce 83.89%);
-  box-shadow: -4px -4px 20px #ffffff, 4px 4px 20px #cfd7d3;
-  border-radius: 40px;
-  width: 69px;
-  height: 69px;
-  margin-right: 20px;
-}
-
-.header__phone-icon {
-  background-image: url(./images/carbon_phone-filled.svg);
-  background-position: center center;
-  background-size: 32px 32px;
-  background-repeat: no-repeat;
-  position: relative;
-  z-index: 2;
-  width: 32px;
-  height: 32px;
-  padding: 18.5px 18.5px;
-}
-
-.header__basket {
-  display: block;
-  background-image: url(./images/basket.svg);
-  background-repeat: no-repeat;
-  width: 36px;
-  height: 33px;
-  background-size: contain;
-  margin: auto 0;
-  position: relative;
-  transition: opacity 0.5s ease;
-}
-
-.header__basket:hover {
-  opacity: 0.7;
-}
-
-.header__number {
-  display: flex;
-  position: absolute;
-  top: -5px;
-  right: -10px;
-  width: 19px;
-  height: 19px;
-  background-image: url(./images/1.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 10px;
-  line-height: 12px;
-  color: #000;
-  justify-content: center;
-  align-items: center;
-}
-
-/* hedgehogs */
-
-.hedgehogs__container {
-  max-width: 1920px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.hedgehogs__title {
-  margin: 0;
-}
-
-.hedgehogs__subtitle {
-  margin: 18.5px 0;
-  font-family: "Cormorant Infant", sans-serif;
-  font-weight: 400;
-  font-size: 50px;
-  line-height: 61px;
-  text-transform: uppercase;
-  color: #70908b;
-}
-
-.hedgehogs__paragraph {
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
-  color: #70908b;
-}
-
-.hedgehogs__button {
-  position: relative;
-  background: #70908b;
-  box-shadow: 4px 4px 20px #c2ccca, -8px -8px 20px #ffffff;
-  border-radius: 40px;
-  width: 328px;
-  height: 69px;
-  font-family: "Raleway";
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  color: #fff;
-  margin: 34px auto 0;
-  border: none;
-  white-space: nowrap;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  transition: background-color 1s normal;
-}
-
-.hedgehogs__button::before {
-  content: "Купить ёжика";
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
+  background-position: 0 0;
+  background-size: 41px 41px;
   width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(90.14deg, #b0d3ce -2.41%, #ffedce 99.79%);
-  border-radius: 40px;
-  transition: opacity 0.5s ease-in-out;
-  color: #195557;
 }
 
-.hedgehogs__button:hover::before {
-  opacity: 1;
-}
-
-/* about */
-
-.about__container {
-  max-width: 1920px;
-  margin: 0 auto;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-}
-
-.about__left-img {
-  position: absolute;
-  top: -80px;
-  left: 0;
-}
-
-.about__cards {
-  margin: 127px auto 19px;
-  display: flex;
-  width: 874px;
-  gap: 155px;
-  list-style: none;
-}
-
-.about__card {
-  position: relative;
-  margin-top: 30px;
-  max-width: 195px;
-  transition: transform 0.5s ease;
-  z-index: 3;
-}
-
-.about__card:hover {
-  transform: scale(1.1);
-}
-
-.about__card_middle {
-  margin: 0;
-}
-
-.about__image {
-  width: 152px;
-  height: 152px;
-  border-radius: 50%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 4px 4px 20px #c2ccca, -8px -8px 20px #ffffff;
-}
-
-.about__image_1 {
-  background-color: #ffedcd;
-}
-
-.about__image_2 {
-  background-color: #e2f0df;
-}
-
-.about__image_3 {
-  background-color: #70908b;
-}
-
-.about__title {
-  margin: 30px 0 8px;
+.sale__remainder-text {
   font-family: "Cormorant Infant", sans-serif;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 19px;
-  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 29px;
   color: #195557;
+  margin: 0;
+  margin-left: 51px;
+  width: max-content;
 }
 
-.about__text {
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
+.sale__remainder-text_span {
+  margin: 0;
+  text-decoration: underline;
+}
+
+.sale__text {
+  font-family: "Raleway";
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
+  text-align: center;
+  font-feature-settings: "pnum" on, "lnum" on;
   color: #195557;
-}
-
-.about__right-img {
-  position: absolute;
-  top: 110px;
-  right: 0;
-  z-index: 5;
+  margin: 25px auto 60px;
+  max-width: 200px;
 }

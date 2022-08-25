@@ -1,0 +1,7 @@
+/* middle-container */
+
+.middle-container {
+    margin-top: 100px;
+    position: relative;
+    z-index: 15;
+  }
