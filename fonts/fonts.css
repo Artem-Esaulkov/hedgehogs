@@ -9,14 +9,14 @@
   font-family: "Cormorant Infant";
   font-style: normal;
   font-weight: 700;
-  src: url("./Cormorantinfantbold.woff2") format("woff2");
+  src: url("./CormorantInfant-Bold.woff") format("woff");
 }
 
 @font-face {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
-  src: url("./Raleway-Regular.woff2") format("woff2");
+  src: url("./Raleway-Regular.woff") format("woff");
 }
 
 @font-face {
@@ -30,7 +30,7 @@
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
-  src: url("./Raleway-Bold.woff2") format("woff2");
+  src: url("./Raleway-Bold.woff") format("woff");
 }
 
 /* font-family: "Cormorant Infant", sans-serif; */

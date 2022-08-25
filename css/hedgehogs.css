@@ -1,0 +1,74 @@
+/* hedgehogs */
+
+.hedgehogs__container {
+    max-width: 1920px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+  }
+  
+  .hedgehogs__title {
+    margin: 0;
+  }
+  
+  .hedgehogs__subtitle {
+    margin: 18.5px 0;
+    font-family: "Cormorant Infant", sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 61px;
+    text-transform: uppercase;
+    color: #70908b;
+  }
+  
+  .hedgehogs__paragraph {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #70908b;
+  }
+  
+  .hedgehogs__button {
+    position: relative;
+    background: #70908b;
+    box-shadow: 4px 4px 20px #c2ccca, -8px -8px 20px #ffffff;
+    border-radius: 40px;
+    width: 328px;
+    height: 69px;
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+    margin: 34px auto 0;
+    border: none;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 1s normal;
+  }
+  
+  .hedgehogs__button::before {
+    content: "Купить ёжика";
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90.14deg, #b0d3ce -2.41%, #ffedce 99.79%);
+    border-radius: 40px;
+    transition: opacity 0.5s ease-in-out;
+    color: #195557;
+  }
+  
+  .hedgehogs__button:hover::before {
+    opacity: 1;
+  }

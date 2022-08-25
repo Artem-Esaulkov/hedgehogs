@@ -1,0 +1,256 @@
+/* slider */
+
+.shop {
+  display: flex;
+  gap: 39px;
+  max-width: 1200px;
+  margin: 0 auto 84px;
+  position: relative;
+}
+
+.slider__container {
+  width: 572px;
+  border-radius: 20px;
+  margin: 0 auto;
+  padding-top: 54px;
+  padding-bottom: 58px;
+  position: relative;
+  z-index: 5;
+}
+
+.slider__container_1 {
+  background-color: #ffedcd;
+}
+
+.slider__container_2 {
+  background-color: #e2f0df;
+}
+
+.swiper-button-prev {
+  background-image: url(../images/button_prev.png);
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 200px;
+  left: -35px;
+  transition: transform 0.5s ease;
+}
+
+.swiper-button-prev:hover {
+  transform: scale(1.1);
+}
+
+.swiper-button-next {
+  background-image: url(../images/button_next.png);
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 200px;
+  right: -35px;
+  transition: transform 0.5s ease;
+}
+
+.swiper-button-next:hover {
+  transform: scale(1.1);
+}
+
+.slider__sale {
+  width: 68px;
+  height: 36px;
+  background-color: #70908b;
+  z-index: 100;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider__sale_1 {
+  position: absolute;
+  top: -6px;
+  left: 430px;
+}
+
+.slider__sale_2 {
+  position: absolute;
+  top: -6px;
+  left: 1020px;
+}
+
+.slider__title {
+  margin: 0 0 17px 59px;
+  font-family: "Cormorant Infant", serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: #195557;
+  max-width: 200px;
+}
+
+.slider__text {
+  margin-left: 59px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #000;
+  max-width: 180px;
+  height: 114px;
+}
+
+.slider__real-price {
+  margin: 7px 0 0 59px;
+  font-family: "Cormorant Infant", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-decoration-line: line-through;
+  color: #c2ccca;
+}
+
+.slider__new-price {
+  margin-left: 59px;
+  font-family: "Cormorant Infant", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: #195557;
+}
+
+.slider__info {
+  background-image: url(../images/ant-design_info-circle-outlined.svg);
+  background-repeat: no-repeat;
+  width: 37px;
+  height: 37px;
+  cursor: pointer;
+  transition: opacity 0.5s ease;
+  z-index: 300;
+}
+
+#info_1 {
+  position: absolute;
+  top: 19px;
+  left: 870px;
+}
+
+#info_2 {
+  position: absolute;
+  top: 19px;
+  left: 1470px;
+}
+
+.slider__info:hover {
+  opacity: 0.7;
+}
+
+.slider__image_1 {
+  position: absolute;
+  bottom: 33px;
+  right: 4px;
+}
+
+.slider__image_2 {
+  position: absolute;
+  bottom: 6px;
+  right: 5px;
+  transform: rotate(-1.96deg);
+}
+
+.slider__rectangle {
+  position: absolute;
+  top: 375px;
+  left: 448px;
+  width: 230px;
+  height: 144px;
+  transform: rotate(-45deg);
+  background-color: #fff;
+}
+
+.slider__info-card {
+  width: 220px;
+  height: 88px;
+  background: url(../images/Rectangle\ 33.png) no-repeat;
+  z-index: 200;
+}
+
+.slider__info-card_1 {
+  position: absolute;
+  top: 60px;
+  left: 780px;
+  display: none;
+}
+
+.slider__info-card_2 {
+  position: absolute;
+  top: 60px;
+  left: 1380px;
+  display: none;
+}
+
+.slider__info-card_active {
+  display: flex;
+  justify-content: center;
+}
+
+.slider__info-container {
+  display: flex;
+  width: 162px;
+  justify-content: space-between;
+}
+
+.slider__info-solid {
+  margin-top: 36px;
+  width: 77px;
+  height: 26px;
+  text-align: right;
+  background-image: url(../images/solid.svg);
+  background-repeat: no-repeat;
+  background-size: 19px 19px;
+}
+
+.slider__info-likes {
+  margin-top: 36px;
+  width: 56px;
+  height: 22px;
+  text-align: right;
+  background-image: url(../images/like.svg);
+  background-repeat: no-repeat;
+  background-size: 19px 19px;
+  cursor: pointer;
+}
+
+.slider__info-likes_active {
+  background-image: url(../images/like_active.png);
+}
+
+.slider__info-text {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  text-transform: lowercase;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #fff;
+}
+
+.slider__plus {
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/plus.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transition: transform 0.5s ease;
+  cursor: pointer;
+}
+
+.slider__plus:hover {
+  transform: scale(1.1);
+}
