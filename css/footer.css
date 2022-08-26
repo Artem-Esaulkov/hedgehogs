@@ -1,0 +1,90 @@
+/* footer */
+
+.footer__container {
+  max-width: 1920px;
+  box-sizing: border-box;
+  padding: 49px 0 30px 60px;
+  background: #70908b;
+}
+
+.footer__menu {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.footer__list {
+  display: flex;
+  margin: 28px 99px 0 610px;
+  gap: 88px;
+  list-style: none;
+}
+
+.footer__item {
+  font-family: "Cormorant Infant", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: text-decoration-color 0.5s ease;
+}
+
+.footer__item:hover {
+  text-decoration-color: #fff;
+}
+
+.multy {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+}
+
+.footer__socials {
+  display: flex;
+  gap: 13px;
+  list-style: none;
+  margin-top: 17px;
+}
+
+.footer__link {
+  width: 40px;
+  height: 40px;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.footer__link_instagram {
+  background-image: url(../images/instagram.svg);
+}
+
+.footer__link_facebook {
+  background-image: url(../images/facebook.svg);
+}
+
+.footer__link_twitter {
+  background-image: url(../images/twitter.svg);
+}
+
+.footer__phone-text {
+  margin-top: 25px;
+  margin-left: 71px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  text-transform: uppercase;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer__copyright {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 9px;
+  line-height: 12px;
+  color: #fff;
+}

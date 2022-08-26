@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./style.css">
     <title>Hedgehog</title>
 </head>
@@ -17,7 +17,16 @@
                     <img src="./images/Logo.svg" alt="Логотип" class="header__logo">
                     <nav class="header__menu">
                         <ul class="header__list">
-                            <li><a class="header__item header__item_multiple">Каталог</a></li>
+                            <li class="multy">
+                                <div class="header__vector"></div>
+                                <a class="header__item header__item_multiple">Каталог</a>
+                                <div class="popup__header">
+                                    <a href="#" class="popup__link">ёжики</a>
+                                    <a href="#" class="popup__link">питание</a>
+                                    <a href="#" class="popup__link">переноски</a>
+                                    <a href="#" class="popup__link">лекарства</a>
+                                </div>
+                            </li>
                             <li><a href="#about" class="header__item">О нас</a></li>
                             <li><a href="#" class="header__item">Контакты</a></li>
                             <li><a href="#" class="header__item">Галерея</a></li>
@@ -175,9 +184,38 @@
             </div>
         </div>
         <div class="right-gradient"></div>
+        <footer class="footer">
+            <div class="footer__container">
+                <nav class="footer__menu">
+                    <img src="./images/logofooter.svg" alt="Логотип" class="footer__logo">
+                    <ul class="footer__list">
+                        <li class="multy">
+                            <a class="footer__item footer__item_multiple">Каталог</a>
+                            <div class="popup__footer">
+                                <a href="#" class="popup__link">ёжики</a>
+                                <a href="#" class="popup__link">питание</a>
+                                <a href="#" class="popup__link">переноски</a>
+                                <a href="#" class="popup__link">лекарства</a>
+                            </div>
+                        </li>
+                        <li><a href="#about" class="footer__item">О нас</a></li>
+                        <li><a href="#" class="footer__item">Контакты</a></li>
+                        <li><a href="#" class="footer__item">Галерея</a></li>
+                    </ul>
+                    <ul class="footer__socials">
+                        <li><a href="https://www.instagram.com" class="footer__link footer__link_instagram"></a></li>
+                        <li><a href="https://www.facebook.com"class="footer__link footer__link_facebook"></a></li>
+                        <li><a href="https://www.twitter.com"class="footer__link footer__link_twitter"></a></li>
+                    </ul>
+                    <a href="tel:+79655698998" class="footer__phone-text">+7 (965) 569-89-98</a>
+                </nav>
+                <p class="footer__copyright">Все права защищены.<br>
+                    Указанная стоимость товаров и условия их приобретения действительны на текущую дату.</p>
+            </div>
+        </footer>
     </main>
-    <script src="./anchors.js"></script>
-    <script src="./swiper-bundle.min.js"></script>
-    <script src="./index.js"></script>
+    <script src="./js/anchors.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 </html>

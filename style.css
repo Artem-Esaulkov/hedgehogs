@@ -1,4 +1,4 @@
-@import url(./normalize.css);
+@import url(./css/normalize.css);
 @import url(./fonts/fonts.css);
 @import url(./css/prime-container.css);
 @import url(./css/header.css);
@@ -8,4 +8,54 @@
 @import url(./css/slider.css);
 @import url(./css/form.css);
 @import url(./css/sale.css);
+@import url(./css/footer.css);
 
+.popup__footer {
+  display: none;
+  width: 169px;
+  box-sizing: border-box;
+  padding: 19px 0 21px 24px;
+  flex-direction: column;
+  gap: 19px;
+  position: absolute;
+  top: -185px;
+  left: -24px;
+  background: #fffefe;
+  box-shadow: 4px 4px 20px #c2ccca;
+  border-radius: 8px;
+  z-index: 250;
+}
+
+.popup__header {
+  display: none;
+  width: 169px;
+  box-sizing: border-box;
+  padding: 19px 0 21px 24px;
+  flex-direction: column;
+  gap: 19px;
+  position: absolute;
+  top: 32px;
+  left: -24px;
+  background: #fffefe;
+  box-shadow: 4px 4px 20px #c2ccca;
+  border-radius: 8px;
+  z-index: 250;
+}
+
+.popup_active {
+  display: flex;
+}
+
+.popup__link {
+  font-family: "Cormorant Infant", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #195557;
+  text-decoration: none;
+}
+
+.popup__link:hover {
+  text-decoration: underline;
+}
