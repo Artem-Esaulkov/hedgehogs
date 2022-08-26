@@ -48,13 +48,22 @@
   
   .header__item_multiple {
     display: block;
-    background-image: url(../images/Vector.svg);
-    background-repeat: no-repeat;
-    background-size: 7px 10px;
-    background-position: 0 center;
     width: 90px;
     text-align: right;
     cursor: pointer;
+  }
+
+  .header__vector {
+    background-image: url(../images/Vector.svg);
+    background-repeat: no-repeat;
+    background-size: 7px 10px;
+    background-position: 0 2px;
+    width: 7px;
+    height: 19px;
+  }
+
+  .header__vector_active {
+    transform: rotate(90deg);
   }
   
   .header__contacts {
